@@ -16,6 +16,7 @@ class CreateContactSourcesTable extends Migration
         Schema::create('contact_sources', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+            $table->string('name');
         });
     }
 

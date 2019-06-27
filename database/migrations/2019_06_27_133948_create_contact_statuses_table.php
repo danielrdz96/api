@@ -16,6 +16,7 @@ class CreateContactStatusesTable extends Migration
         Schema::create('contact_statuses', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps();
+            $table->string('status');
         });
     }
 
