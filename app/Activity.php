@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Model;
 
 class Activity extends Model
 {
-    public function contacts(){
+    public function contact(){
         return $this->hasMany('App\Contact');
     }
     public function status(){
